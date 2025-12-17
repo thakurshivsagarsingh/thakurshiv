@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 10px;
+      background: #f3f3f3;
+     
+     }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #232f3e;
+      padding: 10px;
+    }
+    .nav-item {
+      position: relative;
+      margin: 0 20px;
+      color: white;
+      cursor: pointer;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 30px;
+      background: white;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .box {
+      background: #f2f2f2;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product {
+      margin-bottom: 10px;
+    }
+    .product img {
+      width: 20%;
+      border-radius: 4px;
+    }
+    .price {
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo9a6o2JnJGbcMTPh1oRCBzkNeYAlfePHEYSxtjcfOqOsU79hufgMtHrhGkBFEmLlvuyg&usqp=CAU" alt="Amazon Logo" width="150">
+  </header>
+
+  <nav>
+    <div class="nav-item">Laptops
+      <div class="dropdown">
+        <div>HP Spectre x360</div>
+        <div>Dell XPS13</div>
+        <div>MackBook Air</div>
+        <div>Lenovo ThinkPad</div>
+      </div>
+    </div>
+    <div class="nav-item">Mobiles
+      <div class="dropdown">
+        <div>iPhone 15</div>
+        <div>Samsung Galaxy S24</div>
+        <div>One Plus 11</div>
+        <div>Google Pixels 8</div>
+      </div>
+    </div>
+    <div class="nav-item">Watches
+      <div class="dropdown">
+        <div>Rolex-Sky</div>
+        <div>Emporio</div>
+        <div>Titan</div>
+        <div>Raymond</div>
+      </div>
+    </div>
+    <div class="nav-item">TVs
+      <div class="dropdown">
+        <div>Sony</div>
+        <div>LG</div>
+        <div>Samsung</div>
+        <div>Panasoni</div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="grid">
+    <div class="box">
+      <h3>Laptops</h3>
+      <div class="product">
+        <h5>HP Spectre X360</h5>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBnGKtoTC_I7CKyKHiVxiCEBaYIpNw9xnXJD92SUX4iiodbiXXvM0zb12k2o3zkZo3Mr1-E_qpfd-Qc7Le8w3xR1EXwWBJPzSGNOSdJVgpHVekKO6aPgZHYjw" alt="Laptop Model1">
+        <div class="price">₹1,64,750</div>
+      </div>
+      <div class="product">
+        <h5>Dell XPS13</h5>
+        <img src="https://s3bg.cashify.in/gpro/uploads/2023/12/29175552/dell-xps-13-9315-d560076win9s-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-front.webp" alt="Laptop Model2">
+        <div class="price">₹1,19,600</div>
+      </div>
+      <div class="product">
+        <h5>MacBook Air</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRX3WE9ppawJtc6n_qPBdKUg4UoUGQHlK3S3kREl1umxLVHQJVn0_yUbyKabfePeGj6yIquvlWaLIkJijHceN27OixGXy466BmHieczSbolfqjNkIkakIFotsc" alt="Laptop Model3">
+        <div class="price">₹88,699</div>
+      </div>
+      <div class="product">
+        <h5>Lenovo ThinkPad</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2KQU71v4ObQenqmz0d1uMn-7h1_4xsMFfUn-GQqfBxJMK0rO0jKd93u5fEOIdbKFDo9bvyJdy6a5V_lv7LKu7zSHpTqLxpxhmPoWHXqM03J-t92GuFhC3" alt="Laptop Model4">
+        <div class="price">₹1,20,237</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Mobiles</h3>
+      <div class="product">
+        <h5>iPhone 15</h5>
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgzQhC3uijz5gfLdjQPcVNlaR10O65LVMWGEkPqju-Hn5y7EqGAddgCMesC4Gk-MN8Cmlk1j034x14rCIo47kIouYTqUwqJpeCJeTO9VUDijJ353edaAEq5S9A" alt="Mobile Model1">
+        <div class="price">₹50,990</div>
+      </div>
+      <div class="product">
+        <h5>Samsung Galaxy S24</h5>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGBLgryToLKYokLgf0qbhSIwg0SQKnvp1WxZfFkFKHrnwR8cYDurpR6Cg2vMnLHQaCK2zr_urlLrChY-OVZ5YLbnA-0Gmn4hjN-AeoXcOtT-xLObE6G4CUNA" alt="Mobile Model2">
+        <div class="price">₹44,999</div>
+      </div>
+      <div class="product">
+        <h5>One Plus 11</h5>
+        <img src="https://ssmobile.com/in/assets/img/products/0df822237f044623de87ef0a7bf5653b.jpg" alt="Mobile Model3">
+        <div class="price">₹56,999</div>
+      </div>
+      <div class="product">
+        <h5>Google Pixel 8</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSq5FH_iaO_6ZDP6AEqGFPcVnRCW5wmcaB6aG9MA-33v7LTFpnnvmWp06IThcRDqpVsbGlhhyreJZyWFs9Iglfv5_1m5GTs7w" alt="Mobile Model4">
+        <div class="price">₹54,999</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Watches</h3>
+      <div class="product">
+        <h5>Rado-SKY</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2EPV-zCYDzw4lUoQ92GTI9hLU55nRBffXNF2HrJxHWVfwE79hDeZGUIzfEuf5Q6TmXAbP1j2kcDunefvshjHTpq1rfKUmtVk0BgxRIuFnJO7jbeO5gf_e-Q" alt="Watch Model1">
+        <div class="price">₹20,50,310</div>
+      </div>
+      <div class="product">
+        <h5>Emporio</h5>
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTeOCRUSc65GRkch5Vn8KmCSJMD6BevKYevvdyrpK2t0Xl2PSeuS5s-x_MVqFfv-3xalR6tMQvOeiqOJoAsraRaBr0D4Fqdhp8TFwrOTbfokivqHFVmg1J7yys" alt="Watch Model2">
+        <div class="price">₹32,495</div>
+      </div>
+      <div class="product">
+        <h5>Titan</h5>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTN3L0m3IH0Q-IHt0FiIPscl79QZCqZtazr-PJAeQINpd7ZSRRtdNEaz5kkGdgOJQ89WCj0xhw5F-ww3RL-aXCpirZUOe8indFy1XgMX-bYc4MkuH3iEExt9Q" alt="Watch Model3">
+        <div class="price">₹15,966</div>
+      </div>
+      <div class="product">
+        <h5>Raymond</h5>
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQM6U-vDorKyPeN1hOOQKuSeU9qBGnLzs9gDPzm0f6qo3um0vrc3HZOzBn4tyZNjUkbElbLhFPpeRwqdvC1IUa6Eus_iKoOtTTZSo1tl9avExMGPQUDsm5wxDk" alt="Watch Model4">
+        <div class="price">₹2,69,000</div>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <h3>TVs</h3>
+      <div class="product">
+        <h5>Sony Bravia 8</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRY53m7vsdDoAxaXfmdTauJa370zMsGygcY5sPuZluQuImFbr_mZYb-jUQbcWt7eIevduh7IE3280gALZi5kaDgKZGtdKRcu0gCs9pMoBjR" alt="TV Model1">
+        <div class="price">₹2,96,990</div>
+      </div>
+      <div class="product">
+        <h5>LG Nanacell</h5>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTYjJT-y6oez4r0s4GmK7wYmam_FWOMmMOm12TlHpXGLO-EfTcTWe7TgsLGbljdwcDrPaypJKdUKj__jAqv8RMK0z1-RxZ4S9zkFSxSW7PV98g7AFx8kxiXhQ" alt="TV Model2">
+        <div class="price">₹46,599</div>
+      </div>
+      <div class="product">
+        <h5>Samsung 4K QLED</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQAdpSVGf-OVGV0zbNkMTEjw9ij8ODbKXAag0FN8tv_U3p9o_hJbr0F8wN8-6ghypZVwwHrqfIxHyfwtoRxNX-UfYNirv4OUa47qKYqRbrGI_ku_H6dCwp9" alt="TV Model3">
+        <div class="price">₹97,670</div>
+      </div>
+      <div class="product">
+        <h5>Panasonic TH</h5>
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEowrjsxadpT70mWFgfs1FX1JWHMW69BKM0lvkQLBw3XzXHxDYr_48_N4SGeolStuAab_F4KM8zE_uLIZWBfH6w8VZs8vXanUe9AZTUYvBh1JgkmRMjvJLNAY" alt="TV Model4">
+        <div class="price">₹62,580</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+</body>
+</html>
